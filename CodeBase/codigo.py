@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+
 def ordenar_asc(datos):
     arr_len = len(datos)
     for i in range(arr_len):
@@ -59,7 +60,7 @@ def plot_histograma(datos):
     frec_relativa = calcular_frecuencia_relativa(datos_ordenados)
 
     plt.figure(figsize=(8, 6))
-    plt.bar(clases, frec_relativa, width=0.1, edgecolor='black')
+    plt.bar(clases, frec_relativa, width=0.5, edgecolor='black')
     plt.xlabel('Marca de clase')
     plt.ylabel('Frecuencia relativa')
     plt.title('Histograma')
@@ -95,3 +96,4 @@ def plot_ojiva2(datos, num_clases):
     plt.title('Ojiva')
     plt.grid()
     plt.show()
+
